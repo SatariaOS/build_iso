@@ -1,2 +1,2 @@
-# Satis-Linux
-Satis Linux. This distro is Self-satisfaction.
+# Linux Satis
+Linux Satis is not Linux Distribution, it is remaster of Linux Distribution.
