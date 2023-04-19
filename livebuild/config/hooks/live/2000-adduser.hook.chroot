@@ -1,0 +1,8 @@
+#!/bin/sh
+
+adduser --disabled-password --gecos "Live Demo User" demo
+echo "demo:demo" | chpasswd
+gpasswd -a demo sudo 
+gpasswd -a demo adm
+
+
