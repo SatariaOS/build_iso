@@ -1,4 +1,6 @@
 ! Packages Priority standard
+user-setup
+rsync
 bash-completion
 sudo
 vim

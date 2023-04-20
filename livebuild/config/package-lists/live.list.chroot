@@ -2,3 +2,8 @@ live-boot
 live-config
 live-config-systemd
 systemd-sysv
+calamares
+calamares-extensions
+calamares-extensions-data
+calamares-settings-debian
+squashfs-tools

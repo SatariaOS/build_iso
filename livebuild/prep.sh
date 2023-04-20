@@ -12,5 +12,5 @@ lb config \
 	--mirror-chroot "http://ftp.riken.go.jp/Linux/debian/debian" \
 	--mirror-binary "http://ftp.riken.go.jp/Linux/debian/debian" \
 	--bootappend-live "boot=live components debug=1" \
-	--iso-volume "bookworm-live-image"
+	--image-name "bookworm-live-image"
 
