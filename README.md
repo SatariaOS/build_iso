@@ -20,13 +20,14 @@ sudo lb build
 ```
 
 ## TODO
-- [] Makefileを使ったビルドシステム
-- [] livebuildディレクトリの説明追加
+- [ ] Makefileを使ったビルドシステム
+- [ ] livebuildディレクトリの説明追加
 - [*] Calamares インストーラの導入
+- etc...
 
 ## tree
 ```
-- etc...livebuild/
+livebuild/
 ├── auto
 ├── config
 │   ├── apt
