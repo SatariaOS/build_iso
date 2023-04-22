@@ -1,39 +1,91 @@
 # Linux Satis
-## Summary
-Linux Satis is not Linux Distribution, it is remaster of Linux Distribution for my own satisfaction. 
+## 概要
+Linux Satis は，いわゆるディストリビューションではありません．
+私が自分の自己満足で開発しているDebian Testing (bookworm) のリマスタ版です．
 
-## How to config live build
-- [CONFIG](CONFIG.md)
+現状，独自のパッケージレポジトリを持っていないので，ディストリビューションだと主張はできません．
 
-## How to build iso
-### prereq env
-- Debian Bookworm(testing)
-- amd64
+---
+## 特徴
+- インストーラに[Calamares](https://calamares.io)を採用しています．
+- インストール後の環境は，Live Imageをビルド環境として利用できます．
 
-### prereq software
-```
-apt install live-build
-```
+---
+## 注意
+なお，このリポジトリでビルドしたISOは，仮想マシン(UEFI,64bit，SecureBoot無効)の環境でのみでしか動作確認できておりません．
 
-### build
-```
-cd livebuild
-./prep.sh
-sudo lb build
-```
+実機や本番環境で利用する場合は，事前に大事なデータのバックアップを取るなどの対策をとってください．
 
-### re-build
+---
+## ISOのビルド方法
+### 必要な環境
+Debian 11以上がインストールされたamd64(x86_64)PC．Debian testing (bookworm) を推奨
+
+### 事前に必要なソフトウェア
+以下のパッケージを事前にインストール
+- git
+- live-build
+
+### ビルド方法
+ビルド手順は以下のとおり．
 ```
-cd livebuild
+git clone <このレポジトリ> BuildISO
+cd BuildISO/livebuild
 sudo lb clean
 ./prep.sh
 sudo lb build
 ```
+`satis-live-image-amd64.hybrid.iso`というファイルが生成されます．
+LiveImageのユーザ名は`user`，パスワードは`live`です．
 
+---
+## Live Image のデスクトップ環境を変更する方法
+現在はGNOME環境を前提に開発しています．
+`livebuild/config/package-list/` 以下にある `desktop.list.chroot`にてインストールするデスクトップ環境を選択しています．
+``` 
+task-japanese
+
+gnome-core
+gnome-tweaks
+gnome-shell-extensions
+gnome-shell-extension-manager
+gnome-shell-extension-kimpanel
+gnome-shell-extension-dashtodock
+gnome-shell-extension-hide-activities
+
+gdm3
+
+fonts-noto
+fonts-vlgothic
+
+fcitx5
+fcitx5-mozc
+fcitx5-skk
+```
+
+Xfce4環境に変える場合は，`desktop.list.chroot`を以下のように変更します(未検証)．
+```
+task-japanese
+
+xorg
+xfce4
+lightdm
+
+fonts-noto
+fonts-vlgothic
+
+fcitx5
+fcitx5-mozc
+fcitx5-skk
+```
+
+LiveBuild環境の詳細については以下のドキュメントを参照してください．
+- [CONFIG_LIVEBUILD.md](CONFIG_LIVEBUILD.md)
+
+---
 ## TODO
+- [x] Calamares インストーラの導入
 - [ ] Makefileを使ったビルドシステム
 - [ ] livebuildディレクトリの説明追加
-- [x] Calamares インストーラの導入
-
-etc...
+- [ ] インストール後のGNOMEの設定を自動化
 
