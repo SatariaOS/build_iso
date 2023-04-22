@@ -1,12 +1,13 @@
+task-ssh-server
 user-setup
 rsync
 bash-completion
 sudo
 vim
+vim-gtk3
 emacs
 network-manager
 live-build
-live-config
 fonts-noto-cjk
 fonts-noto-mono
 git

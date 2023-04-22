@@ -1,5 +1,4 @@
 task-japanese
-task-ssh-server
 gnome-core
 gdm3
 fonts-noto
@@ -7,6 +6,10 @@ fonts-vlgothic
 fcitx5
 fcitx5-mozc
 fcitx5-skk
+gnome-tweak
 gnome-shell-extensions
+gnome-shell-extension-manager
 gnome-shell-extension-kimpanel
 gnome-shell-extension-dashtodock
+gnome-shell-extension-hide-activities
+
