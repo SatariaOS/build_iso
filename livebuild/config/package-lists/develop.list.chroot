@@ -1,4 +1,3 @@
-task-ssh-server
 user-setup
 rsync
 bash-completion
@@ -11,3 +10,5 @@ live-build
 fonts-noto-cjk
 fonts-noto-mono
 git
+dctrl-tools
+
