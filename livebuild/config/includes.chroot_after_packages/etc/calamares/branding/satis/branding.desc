@@ -8,12 +8,12 @@ windowPlacement: center
 
 strings:
     productName:         Linux Satis
-    shortProductName:    Debian
-    version:             12 (bookworm)
-    shortVersion:        12
-    versionedName:       Debian 12 (bookworm)
-    shortVersionedName:  Debian 12
-    bootloaderEntryName: Debian
+    shortProductName:    Linux Satis
+    version:             23.04.1
+    shortVersion:        23.04
+    versionedName:       Linux Satis 23.04.1
+    shortVersionedName:  Linux Satis 23.04
+    bootloaderEntryName: Satis
     productUrl:          https://debian.org
     supportUrl:          https://www.debian.org/support
     knownIssuesUrl:      https://bugs.debian.org
