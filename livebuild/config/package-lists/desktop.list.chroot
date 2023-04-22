@@ -1,2 +1,12 @@
 task-japanese
-task-gnome-desktop
+task-ssh-server
+gnome-core
+gdm3
+fonts-noto
+fonts-vlgothic
+fcitx5
+fcitx5-mozc
+fcitx5-skk
+gnome-shell-extensions
+gnome-shell-extension-kimpanel
+gnome-shell-extension-dashtodock

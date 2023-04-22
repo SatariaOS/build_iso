@@ -1,12 +1,1 @@
 ! Packages Priority standard
-user-setup
-rsync
-bash-completion
-sudo
-vim
-emacs
-network-manager
-zsh
-live-config
-fonts-noto-cjk
-fonts-noto-mono

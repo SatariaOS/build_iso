@@ -2,6 +2,7 @@ livebuild/.build
 livebuild/cache
 livebuild/.lock
 livebuild/chroot
+livebuild/binary
 livebuild/binary.*
 livebuild/bookworm-live-image-amd64.*
 livebuild/chroot.*
