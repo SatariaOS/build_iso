@@ -6,7 +6,10 @@ LB_CONFIGURATION_VERSION="20230131"
 # Set package manager
 LB_APT="apt"
 
-# Set proxy for HTTP connections
+# Set apt/aptitude/debootstrap ftp proxy
+LB_APT_FTP_PROXY=""
+
+# Set apt/aptitude/debootstrap http proxy
 LB_APT_HTTP_PROXY=""
 
 # Set apt/aptitude pipeline depth

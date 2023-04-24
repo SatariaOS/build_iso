@@ -29,8 +29,8 @@ Debian 11以上がインストールされたamd64(x86_64)PC．Debian testing (b
 ### ビルド方法
 ビルド手順は以下のとおり．
 ```
-git clone <このレポジトリ> BuildISO
-cd BuildISO/livebuild
+git clone < this repository > workdir
+cd workdir
 sudo lb clean
 ./prep.sh
 sudo lb build
@@ -41,7 +41,7 @@ LiveImageのユーザ名は`user`，パスワードは`live`です．
 ---
 ## Live Image のデスクトップ環境を変更する方法
 現在はGNOME環境を前提に開発しています．
-`livebuild/config/package-list/` 以下にある `desktop.list.chroot`にてインストールするデスクトップ環境を選択しています．
+`config/package-list/` 以下にある `desktop.list.chroot`にてインストールするデスクトップ環境を選択しています．
 ``` 
 task-japanese
 
