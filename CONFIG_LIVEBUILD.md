@@ -27,28 +27,6 @@ Linux-Satis/
 │   ├── includes.binary
 │   ├── includes.bootstrap
 │   ├── includes.chroot_after_packages
-│   │   └── etc
-│   │       └── calamares
-│   │           ├── branding
-│   │           │   └── satis
-│   │           │       ├── branding.desc
-│   │           │       ├── debian-logo.png
-│   │           │       ├── show.qml
-│   │           │       ├── slide1.png
-│   │           │       └── welcome.png
-│   │           ├── modules
-│   │           │   ├── bootloader.conf
-│   │           │   ├── displaymanager.conf
-│   │           │   ├── finished.conf
-│   │           │   ├── fstab.conf
-│   │           │   ├── luksopenswaphookcfg.conf
-│   │           │   ├── machineid.conf
-│   │           │   ├── mount.conf
-│   │           │   ├── packages.conf
-│   │           │   ├── unpackfs.conf
-│   │           │   ├── users.conf
-│   │           │   └── welcome.conf
-│   │           └── settings.conf
 │   ├── includes.chroot_before_packages
 │   ├── includes.installer
 │   ├── includes.source
@@ -70,7 +48,7 @@ Linux-Satis/
 ```
 
 ## LiveImageにインストールするパッケージ
-LiveImageにインストールするパッケージは`livebuild/config/package-list`以下のファイルで指定します．
+LiveImageにインストールするパッケージは`config/package-list`以下のファイルで指定します．
 上の例では，以下の5つのリストを用意しています．
 - **live.list.chroot** ライブ環境構築に必要なパッケージが指定されています．編集不要です．
 - **standard.list.chroot** Package Priorityがstandardのパッケージがインストールされるように特殊な記述をしています．編集不要です．
