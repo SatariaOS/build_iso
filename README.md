@@ -24,18 +24,17 @@ Debian 11以上がインストールされたamd64(x86_64)PC．Debian testing (b
 ### 事前に必要なソフトウェア
 以下のパッケージを事前にインストール
 - git
+- make
 - live-build
 
 ### ビルド方法
 ビルド手順は以下のとおり．
 ```
-git clone < this repository > workdir
+git clone https://github.com/rkarsnk/Linux-Satis.git workdir
 cd workdir
-sudo lb clean
-./prep.sh
-sudo lb build
+make build
 ```
-`satis-live-image-amd64.hybrid.iso`というファイルが生成されます．
+`Satis-live-YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
 LiveImageのユーザ名は`user`，パスワードは`live`です．
 
 ---

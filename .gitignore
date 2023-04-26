@@ -4,6 +4,5 @@ cache
 chroot
 binary
 binary.*
-bookworm-live-image-amd64.*
-satis-live-image-amd64.*
+Satis-Live-*
 chroot.*
