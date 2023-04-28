@@ -1,0 +1,14 @@
+user-setup
+rsync
+bash-completion
+sudo
+vim
+vim-gtk3
+emacs
+network-manager
+live-build
+fonts-noto-cjk
+fonts-noto-mono
+git
+dctrl-tools
+

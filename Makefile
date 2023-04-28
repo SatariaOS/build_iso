@@ -1,6 +1,8 @@
 LIVE_IMAGE="Satis-Live-`date +%Y%m%d`"
 CHROOT_DIR="config/includes.chroot_after_packages"
 ROOTFS_RESOURCES="resources/rootfs"
+PACKAGE_LISTS="config/package-lists"
+PACKAGE_LISTS_RESOURCES="resources/package-lists"
 
 buildconfig:
 	echo "create live config files."
@@ -19,7 +21,8 @@ buildconfig:
 
 	echo "copy resource files."
 	cp -pr ${ROOTFS_RESOURCES}/* ${CHROOT_DIR}
-
+	cp -pr ${PACKAGE_LISTS_RESOURCES}/* ${PACKAGE_LISTS}
+	
 bootstrap: buildconfig
 	sudo lb bootstrap
 
