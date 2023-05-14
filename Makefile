@@ -13,9 +13,9 @@ buildconfig:
 	--parent-distribution bookworm \
 	--parent-debian-installer-distribution bookworm \
 	--archive-areas "main contrib non-free non-free-firmware" \
-	--mirror-bootstrap "http://ftp.riken.go.jp/Linux/debian/debian" \
-	--mirror-chroot "http://ftp.riken.go.jp/Linux/debian/debian" \
-	--mirror-binary "http://ftp.riken.go.jp/Linux/debian/debian" \
+	--mirror-bootstrap "http://deb.debian.org/debian" \
+	--mirror-chroot "http://deb.debian.org/debian" \
+	--mirror-binary "http://deb.debian.org/debian" \
 	--bootappend-live "boot=live components debug=1" \
 	--image-name "${LIVE_IMAGE}"
 
