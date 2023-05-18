@@ -8,6 +8,7 @@ buildconfig:
 	echo "create live config files."
 	lb config \
 	--apt apt \
+	--apt-recommends false \
 	--architecture amd64 \
 	--distribution bookworm  \
 	--parent-distribution bookworm \
