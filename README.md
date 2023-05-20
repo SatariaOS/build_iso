@@ -85,6 +85,5 @@ LiveBuild環境の詳細については以下のドキュメントを参照し�
 ## TODO
 - [x] Calamares インストーラの導入
 - [x] Makefileを使ったビルドシステム
-- [ ] livebuildディレクトリの説明追加
 - [ ] インストール後のGNOMEの設定を自動化
 
