@@ -1,10 +1,10 @@
 # LiveBuild Config
 ## ディレクトリ構造
 LiveBuild環境は以下のようになっています．
-このディレクトリ構造は，`prep.sh`内に記載の`lb config`コマンドを実行することで作成されます．
+このディレクトリ構造は，`make buildconfig` を実行することで作成されます．
 
 `lb config` に指定するオプションによって，`config/{binary,bootstrap,chroot,common,source}`の内容を指定できます．
-詳細については．`prep.sh`を参照してください．
+詳細については．`Makefile`を参照してください．
 ```
 Linux-Satis/
 ├── CONFIG_LIVEBUILD.md
@@ -44,7 +44,7 @@ Linux-Satis/
 │   └── source
 ├── local
 │   └── bin
-└── prep.sh
+└── Makefile
 ```
 
 ## LiveImageにインストールするパッケージ

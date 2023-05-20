@@ -1,19 +1,45 @@
 task-japanese
 
-gnome-core
-gnome-tweaks
-gnome-shell-extensions
-gnome-shell-extension-manager
-gnome-shell-extension-kimpanel
-gnome-shell-extension-dashtodock
-gnome-shell-extension-hide-activities
+# MATE Desktop Environment
+mate-desktop-environment
+mate-desktop-environment-extras
 
-gdm3
+# Network
+network-manager
+network-manager-gnome
+
+# LightDM
+lightdm
+slick-greeter
+
+# Fonts
 fonts-noto
-fonts-vlgothic
+fonts-takao
+fonts-morisawa-bizud-gothic
+fonts-morisawa-bizud-mincho
+fonts-mona
 
+# InputMethod
 fcitx5
 fcitx5-mozc
 fcitx5-skk
 
+# Editor
+emacs-gtk
+neovim
 
+# Shell
+bash-completion
+zsh
+gawk
+rsync
+
+# Develop
+git
+make
+live-build
+dctrl-tools
+
+
+# Administration
+sudo
