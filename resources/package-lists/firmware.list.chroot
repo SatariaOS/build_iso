@@ -5,7 +5,6 @@ firmware-bnx2
 firmware-bnx2x
 firmware-brcm80211
 firmware-intel-sound
-firmware-ipw2x00
 firmware-iwlwifi
 firmware-linux
 firmware-linux-free
