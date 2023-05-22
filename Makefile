@@ -11,6 +11,7 @@ buildconfig:
 	--apt apt \
 	--architecture amd64 \
 	--distribution bookworm  \
+	--firmware-chroot false \
 	--archive-areas "main contrib non-free non-free-firmware" \
 	--mirror-bootstrap "http://deb.debian.org/debian" \
 	--mirror-chroot "http://deb.debian.org/debian" \
