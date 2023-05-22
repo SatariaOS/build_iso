@@ -2,8 +2,9 @@ LIVE_IMAGE="SatisOS-`date +%Y%m%d`"
 
 RESOURCES="resources"
 
-CHROOT_DIR="config/includes.chroot_after_packages"
-PACKAGE_LISTS="config/package-lists"
+CONFIG_CHROOT_DIR="config/includes.chroot_after_packages"
+CONFIG_PACKAGE_LISTS="config/package-lists"
+CONFIG_BOOTLOADERS="config/bootloaders"
 
 buildconfig:
 # create live config files.
@@ -20,8 +21,9 @@ buildconfig:
 	--image-name "${LIVE_IMAGE}"
 
 #copy resource files.
-	cp -pr ${RESOURCES}/rootfs/* ${CHROOT_DIR}
-	cp -pr ${RESOURCES}/package-lists/* ${PACKAGE_LISTS}
+	cp -pr ${RESOURCES}/rootfs/* ${CONFIG_CHROOT_DIR}
+	cp -pr ${RESOURCES}/package-lists/* ${CONFIG_PACKAGE_LISTS}
+	cp -pr ${RESOURCES}/bootloaders/* ${CONFIG_BOOTLOADERS}
 	
 bootstrap: buildconfig
 	sudo lb bootstrap
