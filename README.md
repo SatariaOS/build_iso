@@ -1,4 +1,4 @@
-# Linux Satis
+# SatisOS
 ## 概要
 Satis OS は，いわゆるディストリビューションではありません．
 私が自分の自己満足で開発しているDebian bookwormのリマスタ版です．
