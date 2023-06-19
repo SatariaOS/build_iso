@@ -28,12 +28,14 @@ Debian 12がインストールされたamd64(x86_64)PCを推奨
 ### ビルド方法
 ビルド手順は以下のとおり．
 ```
-git clone https://github.com/rkarsnk/build_iso.git satisos-build-iso
-cd satisos-build-iso
-make build
+$ git clone https://github.com/rkarsnk/build_iso.git satisos-build-iso
+$ cd satisos-build-iso
+$ ./init.sh
+$ make build
 ```
-`Satis-live-YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
-LiveImageのユーザ名は`user`，パスワードは`live`です．
+
+ビルドが成功すると，`SatisOS-YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
+ライブイメージのデフォルトユーザ名は`user`，パスワードは`live`です．
 
 ## TODO
 - [x] Calamares インストーラの導入
