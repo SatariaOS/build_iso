@@ -8,7 +8,7 @@ CONFIG_BOOTLOADERS="config/bootloaders"
 CONFIG_PACKAGES="config/packages"
 
 buildconfig:
-	./init.sh
+	./build.sh
 
 	lb config \
 	--apt apt \
