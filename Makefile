@@ -8,18 +8,19 @@ CONFIG_BOOTLOADERS="config/bootloaders"
 CONFIG_PACKAGES="config/packages"
 
 buildconfig:
-	./build.sh
+	git clone https://github.com/SatisOS/i3wm-resources.git ${RESOURCES}
 
 	lb config \
-	--apt apt \
-	--architecture amd64 \
-	--distribution bookworm  \
-	--firmware-chroot false \
-	--archive-areas "main contrib non-free non-free-firmware" \
-	--mirror-bootstrap "http://deb.debian.org/debian" \
-	--mirror-chroot "http://deb.debian.org/debian" \
-	--bootappend-live "boot=live components debug=1" \
-	--image-name "${LIVE_IMAGE}"
+		--apt apt \
+		--architecture amd64 \
+		--distribution bookworm  \
+		--firmware-chroot false \
+		--archive-areas "main contrib non-free non-free-firmware" \
+		--mirror-bootstrap "http://deb.debian.org/debian" \
+		--mirror-chroot "http://deb.debian.org/debian" \
+		--bootappend-live "boot=live components locales=ja_JP.UTF-8 timezone=Asia/Tokyo debug=1" \
+		--binary-image iso \
+		--image-name "${LIVE_IMAGE}"
 
 	cp -pr ${RESOURCES}/rootfs/* ${CONFIG_CHROOT_DIR}
 	cp -pr ${RESOURCES}/package-lists/* ${CONFIG_PACKAGE_LISTS}
@@ -41,5 +42,5 @@ build: buildconfig
 
 clean:
 	sudo lb clean
-	rm -rf config local auto 
-	./clean.sh
+	rm -rf config local auto ${RESOURCES}
+	
