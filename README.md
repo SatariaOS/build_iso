@@ -1,9 +1,9 @@
-# SatisOS build_iso
+# SataliaOS build_iso
 ## 概要
 このレポジトリはSatis OSのインストールLiveISOを作成するために必要なファイルを管理するレポジトリです．
 
 ## 特徴
-SatisOSは以下の特徴を有しています．
+SataliaOSは以下の特徴を有しています．
 - Debian 12 (bookworm) ベース
 - インストーラに[Calamares](https://calamares.io)を採用しています．
 - 以下のGUI環境を採用しています．
@@ -28,13 +28,13 @@ Debian 12がインストールされたamd64(x86_64)PCを推奨
 ### ビルド方法
 ビルド手順は以下のとおり．
 ```
-$ git clone https://github.com/rkarsnk/build_iso.git satisos-build-iso
-$ cd satisos-build-iso
+$ git clone https://github.com/rkarsnk/build_iso.git build-iso
+$ cd build-iso
 $ ./init.sh
 $ make build
 ```
 
-ビルドが成功すると，`SatisOS-YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
+ビルドが成功すると，`SataliaOS-YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
 ライブイメージのデフォルトユーザ名は`user`，パスワードは`live`です．
 
 ## TODO
