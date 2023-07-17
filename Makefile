@@ -1,4 +1,4 @@
-LIVE_IMAGE="SatisOS-`date +%Y%m%d`"
+LIVE_IMAGE="SatariaOS-`date +%Y%m%d`"
 
 RESOURCES="resources"
 

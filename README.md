@@ -1,6 +1,6 @@
 # SataliaOS build_iso
 ## 概要
-このレポジトリはSatis OSのインストールLiveISOを作成するために必要なファイルを管理するレポジトリです．
+このレポジトリはSatariaOSのインストールLiveISOを作成するために必要なファイルを管理するレポジトリです．
 
 ## 特徴
 SataliaOSは以下の特徴を有しています．
@@ -34,7 +34,7 @@ $ ./init.sh
 $ make build
 ```
 
-ビルドが成功すると，`SataliaOS-YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
+ビルドが成功すると，`SatariaOS-YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
 ライブイメージのデフォルトユーザ名は`user`，パスワードは`live`です．
 
 ## TODO
