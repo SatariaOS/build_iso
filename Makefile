@@ -7,7 +7,7 @@ CONFIG_PACKAGE_LISTS="config/package-lists"
 CONFIG_BOOTLOADERS="config/bootloaders"
 CONFIG_PACKAGES="config/packages"
 
-buildconfig:
+config:
 	git clone https://github.com/SatisOS/i3wm-resources.git ${RESOURCES}
 
 	lb config \
@@ -28,7 +28,7 @@ buildconfig:
 	
 	cp -pr dpkg/* ${CONFIG_PACKAGES}
 
-bootstrap: buildconfig
+bootstrap: config
 	sudo lb bootstrap
 
 chroot: bootstrap
@@ -37,7 +37,7 @@ chroot: bootstrap
 binary: chroot
 	sudo lb binary
 
-build: buildconfig
+build: config
 	sudo lb build
 
 clean:
